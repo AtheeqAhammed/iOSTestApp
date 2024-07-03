@@ -16,6 +16,7 @@
 		B42B9D892C3454C100FCBE56 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B9D882C3454C100FCBE56 /* ImageCollectionViewCell.swift */; };
 		B42B9D8B2C34578600FCBE56 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B9D8A2C34578600FCBE56 /* UIView+Extension.swift */; };
 		B42B9D8D2C345B9900FCBE56 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B9D8C2C345B9900FCBE56 /* ItemTableViewCell.swift */; };
+		B4A1F9572C3536B7000649B1 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A1F9562C3536B7000649B1 /* BottomSheetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B42B9D882C3454C100FCBE56 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		B42B9D8A2C34578600FCBE56 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		B42B9D8C2C345B9900FCBE56 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		B4A1F9562C3536B7000649B1 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				B42B9D882C3454C100FCBE56 /* ImageCollectionViewCell.swift */,
 				B42B9D8A2C34578600FCBE56 /* UIView+Extension.swift */,
 				B42B9D8C2C345B9900FCBE56 /* ItemTableViewCell.swift */,
+				B4A1F9562C3536B7000649B1 /* BottomSheetViewController.swift */,
 			);
 			path = iOSTestApp;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B42B9D792C3453CB00FCBE56 /* ViewController.swift in Sources */,
+				B4A1F9572C3536B7000649B1 /* BottomSheetViewController.swift in Sources */,
 				B42B9D752C3453CB00FCBE56 /* AppDelegate.swift in Sources */,
 				B42B9D892C3454C100FCBE56 /* ImageCollectionViewCell.swift in Sources */,
 				B42B9D8B2C34578600FCBE56 /* UIView+Extension.swift in Sources */,

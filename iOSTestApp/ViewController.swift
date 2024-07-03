@@ -11,6 +11,8 @@ class ViewController: UIViewController {
     
     var images = ["snow", "bridge", "river", "mountain", "snow", "bridge", "river", "mountain", "bridge", "river"]
     
+    let items = ["apple", "banana", "orange", "blueberry"]
+    
     var previousOffsetState: CGFloat = 0
 
     @IBOutlet weak var collectionView: UICollectionView!
@@ -125,5 +127,21 @@ extension ViewController {
         floatingButton.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -40).isActive = true
 
         floatingButton.bottomAnchor.constraint(equalTo: self.view.layoutMarginsGuide.bottomAnchor, constant: -20).isActive = true
+        
+        floatingButton.addTarget(self, action: #selector(showBottomSheet), for: .touchUpInside)
     }
+    
+    @objc func showBottomSheet() {
+            let bottomSheetVC = BottomSheetViewController()
+            bottomSheetVC.items = items
+            bottomSheetVC.modalPresentationStyle = .pageSheet
+        if #available(iOS 15.0, *) {
+            if let sheet = bottomSheetVC.sheetPresentationController {
+                sheet.detents = [.medium(), .large()]
+            }
+        } else {
+            // Fallback on earlier versions
+        }
+            present(bottomSheetVC, animated: true, completion: nil)
+        }
 }
